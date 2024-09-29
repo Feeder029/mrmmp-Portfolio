@@ -1,0 +1,201 @@
+.portfolio{
+    background-color: #686D76;
+    padding: 110px 85px;
+}
+
+.portfolio .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    
+}
+
+
+
+.portfolio .portfo-items{
+    padding: 100px;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio .portfo-items .item{
+    width: 30%;
+    background-color: #525252;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+
+}
+
+.portfolio .portfo-items .item:hover{
+    border-color: #EEF7FF;
+}
+.portfolio .header .item img{
+    width: 100%;
+}
+
+.portfolio .portfo-items .item img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.portfolio .portfo-items .item .info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+
+.portfolio .portfo-items .info a{
+    color: #F5E8C7;
+}
+
+.portfolio .portfo-items .item .info p{
+    font-size: 13px;
+    color: #EEF7FF;
+}
+
+.portfolio .portfo-items .item .info a{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #F5E8C7;
+}
+
+.portfolio .portfo-items .item .info a i{
+    margin-left: 2px;
+    font-size: 16px ;
+}
+
+.image-container {
+    overflow:visible;
+}
+
+.grow-on-hover {
+    transition: transform 1s ease;
+    width: 300px;
+    height: 300px;
+}
+
+.grow-on-hover:hover {
+    transform: scale(1.08);
+}
+
+.portfolio .portfo-items .item img:hover{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: absolute; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background: rgba(0, 0, 0, .1);
+    justify-content: center; 
+    align-items: center;
+}
+
+.modal .modal-content {
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 250px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px; 
+    text-align: center; 
+    background: rgba(0, 0, 0, .5);
+}
+
+.modal-content video {
+    width: 100%;
+    height: auto;
+}
+
+.modal .modal-content .close {
+    color: red;
+    margin-bottom: 20px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal .modal-content .close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+   
+.portfolio .header button{
+    background-color: gray;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #EEF7FF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+.portfolio .header button i{
+    font-size: 26px;
+}
+.portfolio .header button::before {
+    left: -4px;
+    background: #240046;
+}
+
+.portfolio .header button::after {
+    right: -4px;
+    background: #5a189a;
+}
+
+button:hover::before,
+button:hover::after {
+    width: 53%;
+}
+
+button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+}
+
+button span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}

@@ -1,0 +1,278 @@
+.home{
+    background-color: #393646;
+    padding: 200px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 190px;
+}
+
+.home .left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.home .left h5 .hello{
+    animation: slideBottom 1s ease backwards;
+    animation-delay: 1s;
+}
+
+.home .left h5 .name{
+  animation: zoomOut 1s ease backwards;
+    animation-delay: 2s;
+}
+
+.home .left h3{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+    color: #EEF7FF;
+    animation: slideRight 1s ease-out backwards;
+    animation-delay: 3s;
+}
+
+.home .left h3 span{
+    color: #F5E8C7;
+    animation: zoomOut 5s ease backwards;
+    animation-delay: 4s;
+}
+
+.home .left p{
+    color: #EEF7FF;
+    font-size: 22px;
+    margin-top: 20px;
+    animation: zoomOut 2s ease backwards;
+    animation-delay: 5s;
+}
+
+.home .left button{
+    margin-top: 40px;
+    --color: #4F4557;
+    cursor: pointer;
+    background-color: #F5E8C7;
+    display: inline-block;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: color .5s;
+    z-index: 1;
+    font-weight: 500;
+    color: var(--color);
+    animation: slideTop 1s ease backwards;
+    animation-delay: 8.5s;
+}
+
+.home .right img{
+    margin-bottom: -199px;
+    position: relative;
+    width: 600px;
+    animation: zoomOut 1s ease backwards;
+    animation-delay: 6s;
+    filter: drop-shadow(1px 0px 10px rgba(0, 0, 0, 1));
+}
+
+.home .left button::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.home .left button:hover{
+    color: #F5E8C7;
+}
+
+.home .left button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.home .left button:hover:before {
+    top: -35px;
+    left: -30px;
+}
+
+.home .left button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+
+/* btn text anim
+.button,
+.button *,
+.button :after,
+.button :before,
+.button:after,
+.button:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.button:disabled {
+    cursor: default;
+  }
+  
+  .button:-moz-focusring {
+    outline: auto;
+  }
+  
+  .button svg {
+    display: block;
+    
+  }
+  
+  .button [hidden] {
+    display: none;
+  }
+
+  .button {
+    border: 1px solid;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 500;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .button .original {
+    background: #fff;
+    color: #000;
+    display: grid;
+    inset: 0;
+    place-content: center;
+    position: absolute;
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+  }
+  
+  .button:hover .original {
+    transform: translateY(100%);
+  }
+  
+  .button .letters {
+    display: inline-flex;
+  }
+  
+  .button span {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+  }
+  
+  .button span:nth-child(2n) {
+    transform: translateY(15px);
+  }
+  
+  .button:hover span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .button:hover span:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  
+  .button:hover span:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  
+  .button:hover span:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  
+  .button:hover span:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+  
+  .button:hover span:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+  .button:hover span:nth-child(7) {
+    transition-delay: 0.6s;
+  }
+  .button:hover span:nth-child(8) {
+    transition-delay: 0.7s;
+  }
+  .button:hover span:nth-child(9) {
+    transition-delay: 0.8s;
+  }
+  .button:hover span:nth-child(10) {
+    transition-delay: 0.9s;
+  }
+  .button:hover span:nth-child(11) {
+    transition-delay: 1s;
+  }
+  .button:hover span:nth-child(12) {
+    transition-delay: 1.1s;
+  }
+*/
+
+/*KEYFRAMES ANIMATION*/
+
+@keyframes slideRight{
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideTop{
+  0%{
+      transform: translateY(100px);
+      opacity: 0;
+  }
+
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideLeft{
+  0%{
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideBottom{
+  0%{
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes zoomOut{
+  0%{
+      transform: scale(1.1);
+      opacity: 0;
+  }
+
+  100%{
+      transform: scale(1);
+      opacity: 1;
+  }
+}

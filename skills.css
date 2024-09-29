@@ -1,0 +1,107 @@
+.skills{
+    padding: 90px 85px ;
+    padding-bottom: 150px;
+    background-color: #393646;
+}
+
+.skills h3,
+.about .right h3,
+.portfolio .header h3,
+.contact h3{
+    font-size: 40px;
+    margin-top: 20px;
+    color: #F5E8C7;
+}
+
+.skills .skill-items{
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 70px;
+}
+
+.skills .skill-items .item{
+    background-color: #525252;
+    width: 25%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skill-items .item:hover{
+    border-color: #EEF7FF;
+}
+
+.skills .skill-items .item .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills h5{
+    color: #393646;
+}
+
+.skills .skill-items .item .icon i{
+    font-size: 26px;
+    color: #393646;
+}
+
+.skills .skill-items .item h4,
+.portfolio .portfo-items .item .info h4{
+    font-size: 18px;
+    color: #F5E8C7;
+}
+
+.skills .skill-items .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #EEF7FF;
+}
+
+.carousel-indicators{
+    height: 50px;
+    margin-bottom:  0px;
+    padding-top: 50px;
+}
+
+.carousel-button-slide .carousel-indicators li {
+    opacity: 1;    
+    height: 5px;
+    width: 80px;
+    border-width: 5px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.carousel-indicators .active {
+    background-color: #F4EEE0; 
+    opacity: 1;
+    
+}
+
+.carousel-indicators li:not(.active) {
+    background-color: #686D76;
+}
+
+#prevIcon,
+#nextIcon {
+    color: #F5E8C7;
+    font-size: 4rem; 
+    display: absolute;
+    margin-top: 100px;
+    margin-right: -85px;
+    margin-left: -100px;
+    margin-bottom: 100px;
+}

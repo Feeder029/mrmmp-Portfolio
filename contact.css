@@ -1,0 +1,55 @@
+.contact {
+    padding: 110 85px;
+    background-color: #393646;
+    text-decoration: none;
+}
+
+
+
+.contact .header{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 85px;
+    margin-bottom: 60px;
+}
+
+.contact .panel{
+    padding: 100px;
+    align-items: center;
+    display: flex;
+    
+    padding-left: 100px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.contact .right .logo{
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    display: flex;  
+    justify-content: space-between;
+}
+
+.contact .right .logo .social-links{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.contact .right .logo .social-links a {
+    color: #F5E8C7;
+    display: flex;
+    flex-direction: row;
+    left: 45%;
+    text-decoration: none;
+}
+.contact .right .logo{
+    margin-top: -200px;
+    
+}
